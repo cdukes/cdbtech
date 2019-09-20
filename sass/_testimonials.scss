@@ -1,0 +1,15 @@
+.home-section-testimonials {
+	&.open {
+		.additional-testimonials {
+			display: block;
+		}
+
+		.btn {
+			display: none;
+		}
+	}
+}
+
+.additional-testimonials {
+	display: none;
+}

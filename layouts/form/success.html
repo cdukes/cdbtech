@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+
+{{ partial "menu.html" . }}
+
+<main class="site-container">
+	<section class="home-section home-section-about">
+		<div class="wrap">
+			<header>
+				<h2>{{ .Title }}</h2>
+			</header>
+
+			{{.Content}}
+		</div>
+	</section>
+</main>
+
+{{ partial "footer.html" . }}

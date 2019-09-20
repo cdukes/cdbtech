@@ -1,0 +1,15 @@
+<blockquote class="testimonial" itemscope itemtype="http://schema.org/Review">
+	<header>
+		<h3 itemprop="name">{{ .Title }}</h3>
+	</header>
+
+	<meta itemprop="datePublished" content="{{ .Date.Format "2006-01-02" }}">
+
+	<div itemprop="reviewBody">
+		{{ .Content }}
+	</div>
+
+	<footer>
+		<cite>~ <span itemprop="author">{{ .Params.Author }}</span></cite>
+	</footer>
+</blockquote>

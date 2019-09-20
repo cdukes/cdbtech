@@ -1,0 +1,20 @@
+baseURL = "https://cdbtech.com/"
+languageCode = "en-us"
+title = "Web Development by Cooper Dukes"
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+preserveTaxonomyNames = true
+
+[params]
+companyName = "CDBTech, LLC"
+
+[taxonomies]
+category = "categories"
+
+[permalinks]
+form = ":slug"
+
+[outputs]
+page = ["html"]
+form = ["html"]
+section = ["json"]
+home = ["html"]

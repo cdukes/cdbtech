@@ -1,0 +1,89 @@
+.site-container {
+	margin-bottom: ($spacer * 2);
+}
+
+.home-section {
+	padding-top: ($spacer * 3);
+	min-height: 100vh;
+
+	&:first-child {
+		padding-top: ($spacer * 4.5);
+	}
+
+	> .wrap {
+		@include wrap;
+		max-width: 50em;
+	}
+
+	header {
+		margin-bottom: $spacer;
+	}
+
+	h2 {
+		margin-bottom: 0;
+		padding-left: 1rem;
+		border-left: .5rem solid $s;
+		font-size: rfs(2rem);
+		transform: translateX(-1.5rem);
+	}
+}
+
+@include media('<=portrait') {
+	.home-section {
+		min-height: 0;
+
+		h2 {
+			transform: none;
+		}
+	}
+}
+
+.home-section-content {
+	a {
+		color: $s;
+
+		&:hover {
+			color: $s-d;
+		}
+	}
+
+	ol,
+	ul {
+		@include type;
+		overflow: hidden;
+		padding-left: 1.5em;
+
+		li {
+			margin-bottom: .25em;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	ol {
+		li {
+			list-style-type: decimal;
+		}
+	}
+
+	ul {
+		li {
+			list-style-type: disc;
+		}
+	}
+
+	blockquote {
+		margin: 0 auto $spacer;
+		padding: 1em;
+		border-radius: $border-radius;
+		background-color: $grey;
+
+		&.testimonial {
+			div[itemprop='reviewBody'] {
+				margin-bottom: $spacer;
+			}
+		}
+	}
+}

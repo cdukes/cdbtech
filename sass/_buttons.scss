@@ -1,0 +1,26 @@
+.btn {
+	display: inline-block;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	text-align: center;
+	text-decoration: none;
+	line-height: 1.15;
+	cursor: pointer;
+	transition: all .15s ease-in-out;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.btn-solid {
+	padding: .5em .75em;
+	border-radius: $border-radius;
+	background-color: $s;
+	color: $white;
+
+	&:hover {
+		background-color: $s-d;
+	}
+}

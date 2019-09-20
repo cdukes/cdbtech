@@ -1,0 +1,22 @@
+
+	<footer class="site-footer">
+		<div class="wrap">
+			<div class="left">
+				<p><a href="mailto:hello@cdbtech.com">hello@cdbtech.com</a></p>
+			</div>
+
+			<div class="right">
+				<p>&copy; {{ now.Year }} – {{ .Site.Params.companyName }}</p>
+			</div>
+		</div>
+	</footer>
+
+	{{ if eq (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js" integrity="sha256-ufGElb3TnOtzl5E4c/qQnZFGP+FYEZj5kbSEdJNrw0A=" crossorigin="anonymous"></script>
+		<script defer src="{{  $.Site.BaseURL }}build/js/scripts.js"></script>
+	{{ else }}
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js" integrity="sha256-chlNFSVx3TdcQ2Xlw7SvnbLAavAQLO0Y/LBiWX04viY=" crossorigin="anonymous"></script>
+		<script defer src="/build/js/scripts.min.js?v={{ readFile "/static/build/js/scripts.min.js" | md5 }}"></script>
+	{{ end }}
+</body>
+</html>

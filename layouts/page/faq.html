@@ -1,0 +1,9 @@
+{{.Content}}
+
+<div role="tablist" aria-multiselectable="true">
+	{{ range where .Site.Pages "Section" "question" }}
+		{{ if .Content }}
+			{{ partial "question.html" . }}
+		{{ end }}
+	{{ end }}
+</div>

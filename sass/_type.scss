@@ -1,0 +1,42 @@
+html,
+body {
+	// min-width: $site-width; // Prevents backgrounds on these elements from being truncated on smaller screens on fixed-width sites
+}
+
+body {
+	background-color: $grey-light;
+	color: $text;
+	font-weight: 300;
+	font-family: $sans;
+	// scroll-behavior: smooth;
+	// overscroll-behavior: contain;
+
+	fill: $text;
+}
+
+::selection {
+	// text-shadow: none;
+}
+
+a {
+	text-decoration: underline;
+	transition: all .15s ease-in-out;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+ol,
+ul {
+	@include unstyled-list;
+}
+
+p {
+	@include type;
+}
+
+b,
+strong {
+	font-weight: 700;
+}

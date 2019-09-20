@@ -1,0 +1,47 @@
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+
+// Remove the gap between images, videos, audio and canvas and the bottom of their containers: h5bp.com/i/440
+audio,
+canvas,
+img,
+video {
+	vertical-align: middle;
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+	@include type;
+	margin: 0;
+	text-align: center;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto $spacer;
+}
+
+.alignleft {
+	float: left;
+	margin: 0 $spacer $spacer 0;
+	max-width: 40%;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 $spacer $spacer;
+	max-width: 40%;
+}

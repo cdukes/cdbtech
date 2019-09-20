@@ -1,0 +1,17 @@
+{{.Content}}
+
+{{ range first 3 (where .Site.Pages.Reverse "Type" "eq" "testimonial") }}
+	{{ if .Content }}
+		{{ partial "testimonial.html" . }}
+	{{ end }}
+{{ end }}
+
+<button type="button" class="btn btn-solid">View More Testimonials</button>
+
+<div class="additional-testimonials">
+	{{ range after 3 (where .Site.Pages.Reverse "Type" "eq" "testimonial") }}
+		{{ if .Content }}
+			{{ partial "testimonial.html" . }}
+		{{ end }}
+	{{ end }}
+</div>

@@ -1,0 +1,97 @@
+.nav-container {
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	border-top: .5em solid $p-d;
+	background-color: $p;
+	color: $white;
+
+	> .wrap {
+		@include wrap;
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.site-title {
+	flex: 0 0 auto;
+	padding: .75em .5em;
+
+	h1 {
+		margin-bottom: 0;
+		font-size: rfs(1rem);
+	}
+}
+
+@include media('<=portrait') {
+	.site-title {
+		flex: 1 1 auto;
+	}
+}
+
+.site-navigation {
+	display: flex;
+	align-items: center;
+	flex: 1 1 auto;
+	padding-left: $spacer;
+	background-color: $p;
+
+	a {
+		display: block;
+		flex: 1 1 auto;
+		padding: .75em .5em;
+		color: inherit;
+		text-align: center;
+		text-decoration: none;
+		line-height: 1.1;
+
+		&.current,
+		&:hover {
+			background-color: $p-d;
+		}
+	}
+}
+
+@include media('<=portrait') {
+	.site-navigation {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		display: none;
+		padding-left: 0;
+		width: 100%;
+
+		.menu-open & {
+			display: block;
+		}
+	}
+}
+
+.toggle-nav-menu {
+	display: none;
+	flex: 0 0 auto;
+	color: $white;
+
+	svg,
+	span {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	svg {
+		margin-right: .25em;
+		width: 1em;
+		height: 1em;
+
+		fill: $white;
+	}
+}
+
+@include media('<=portrait') {
+	.toggle-nav-menu {
+		display: block;
+	}
+}

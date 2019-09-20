@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+	<meta charset="utf-8">
+	<title>{{ .Site.Title }} - {{ .Site.Params.companyName }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Accept-CH" content="DPR">
+
+	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+	<link rel="dns-prefetch" href="https://res.cloudinary.com">
+
+	{{ "<![if !IE]>" | safeHTML }}
+	<script>
+		window.Muscula = { settings:{
+			logId:'D2dkheG-y5debb', suppressErrors: false
+		}};
+		(function () {
+			var m = document.createElement('script'); m.type = 'text/javascript'; m.async = true;
+			m.src = (window.location.protocol == 'https:' ? 'https:' : 'http:') +
+			'//musculahq.appspot.com/Muscula8.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(m, s);
+			window.Muscula.run=function(){var a;eval(arguments[0]);window.Muscula.run=function(){};};
+			window.Muscula.errors=[];window.onerror=function(){window.Muscula.errors.push(arguments);
+			return window.Muscula.settings.suppressErrors===undefined;}
+		})();
+	</script>
+	{{ "<![endif]>" | safeHTML }}
+
+	<meta property="og:title" content="{{ .Site.Title }} - {{ .Site.Params.companyName }}">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{{ .Permalink }}">
+	<meta property="og:image" content="{{ "media/cooper.jpg" | absURL }}">
+
+	<link rel="shortcut icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}">
+
+	<meta name="google-site-verification" content="k9GEIq6x4EZds5g3lLkaHFjAx7auk30sr1O5MDeLWHk">
+	{{ hugo.Generator }}
+
+	<link rel="canonical" href="{{ .Permalink }}">
+
+	{{ if eq (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
+		<link rel="stylesheet" href="{{  $.Site.BaseURL }}build/css/style.css" type="text/css">
+	{{ else }}
+		<link rel="stylesheet" href="/build/css/style.min.css?v={{ readFile "/static/build/css/style.min.css" | md5 }}" type="text/css">
+	{{ end }}
+
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"name": "{{ .Site.Params.companyName }}",
+			"url": "{{ .Permalink }}",
+			"contactPoint": [
+				{
+					"@type": "ContactPoint",
+					"email": "hello@cdbtech.com",
+					"contactType": "customer service",
+					"url": "{{ .Permalink }}"
+				}
+			]
+		}
+	</script>
+</head>
+<body>

@@ -1,0 +1,41 @@
+.site-footer {
+	padding: .75em .5em;
+	border-bottom: .5em solid $p-d;
+	background-color: $p;
+	color: $white;
+
+	> .wrap {
+		@include wrap;
+		display: flex;
+	}
+
+	.left {
+		flex: 1 1 auto;
+	}
+
+	.right {
+		flex: 1 1 auto;
+		text-align: right;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+@include media('<portrait') {
+	.site-footer {
+		> .wrap {
+			display: block;
+		}
+
+		.left {
+			margin-bottom: ($spacer / 2);
+		}
+
+		.right {
+			text-align: left;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.field-row {
+	display: flex;
+	margin-bottom: ($spacer / 2);
+
+	.field {
+		flex: 1 1 0;
+
+		+ .field {
+			margin-left: $spacer;
+		}
+	}
+}
+
+.field {
+	> label {
+		display: block;
+		margin-bottom: .25em;
+		font-weight: bold;
+	}
+
+	> p {
+		margin-top: .25em;
+		color: rgba($text, .75);
+		font-style: italic;
+		font-size: rfs(.75rem);
+		line-height: 1.25;
+	}
+}

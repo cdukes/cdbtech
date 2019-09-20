@@ -1,0 +1,3 @@
+{
+	"items": {{ block "response" .}}{{ end }}
+}

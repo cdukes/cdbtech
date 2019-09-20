@@ -1,0 +1,14 @@
+{
+	"title": "{{- .Title -}}",
+	"weight": {{- .Weight -}},
+	"image": {{- if isset .Params "image" -}}"{{- .Params.image -}}"{{- else -}}null{{- end -}},
+	"website": {{- if isset .Params "website" -}}"{{- .Params.website -}}"{{- else -}}null{{- end -}},
+	"designer_name": {{- if isset .Params "designer_name" -}}"{{- .Params.designer_name -}}"{{- else -}}null{{- end -}},
+	"designer_url": {{- if isset .Params "designer_url" -}}"{{- .Params.designer_url -}}"{{- else -}}null{{- end -}},
+	"template_url": {{- if isset .Params "template_url" -}}"{{- .Params.template_url -}}"{{- else -}}null{{- end -}},
+	"categories": [
+		{{- range $i, $e := .Params.categories -}}
+			{{- if $i -}}, {{- end -}}"{{- . -}}"
+		{{- end -}}
+	]
+}

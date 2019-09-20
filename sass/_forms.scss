@@ -1,0 +1,97 @@
+input[type='text'],
+input[type='password'],
+input[type='search'],
+input[type='email'],
+input[type='url'],
+input[type='number'],
+textarea {
+	padding: calc(.5em - 1px) .75em;
+	max-width: 100%;
+	width: 100%;
+	border: 1px solid $grey;
+	border-radius: $border-radius;
+	background-color: $white;
+	color: $black;
+
+	appearance: none;
+}
+
+// Hide the spinner on input[type="number"] in Firefox
+input[type='number'] {
+	// -moz-appearance:textfield;
+}
+
+// Hide the spinner on input[type="number"] in Chrome/Safari
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	// -webkit-appearance: none;
+}
+
+// Hide the search clear button in Chrome/Safari
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button {
+	// display: none;
+}
+
+textarea {
+	display: block;
+	resize: vertical; // Allow only vertical resizing of textareas.
+}
+
+select {
+	width: 100%;
+	color: $black;
+}
+
+.styled-select {
+	position: relative;
+
+	&:after {
+		position: absolute;
+		top: 50%;
+		right: .75em;
+		width: 0;
+		height: 0;
+		border-width: 5px;
+		border-style: solid;
+		border-color: $black transparent transparent transparent;
+		content: '';
+		transform: translateY(-2.5px);
+		pointer-events: none;
+	}
+
+	select {
+		padding: calc(.5em - 1px) 2em calc(.5em - 1px) .75em;
+		border: 1px solid $grey;
+		border-radius: $border-radius;
+		background-color: $white;
+		font-weight: 300;
+		font-family: inherit;
+		cursor: pointer;
+
+		appearance: none;
+
+		&::-ms-expand {
+			display: none;
+		}
+	}
+}
+
+::placeholder {
+	text-overflow: ellipsis;
+}
+
+input[type='search'] {
+	box-sizing: border-box; // Overrides normalize.css
+
+	// Remove IE clear button
+	&::-ms-clear {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+}
+
+.required {
+	color: $s;
+}

@@ -1,0 +1,5 @@
+{{ if eq (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
+	<img src="{{ .Get "src" | absURL }}" class="{{ .Get "class" }}" width="{{ .Get "width" }}" height="{{ .Get "height" }}" alt="{{ .Get "alt" }}">
+{{ else }}
+	<img src="https://res.cloudinary.com/cdbtech/image/fetch/w_{{ .Get "width" }},h_{{ .Get "height" }},dpr_auto/{{ .Get "src" | absURL }}" class="{{ .Get "class" }}" width="{{ .Get "width" }}" height="{{ .Get "height" }}" alt="{{ .Get "alt" }}">
+{{ end }}

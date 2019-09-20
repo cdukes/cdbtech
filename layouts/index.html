@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+{{ partial "menu.html" . }}
+
+<main class="site-container">
+	{{ range (where (where .Site.Pages "Weight" "gt" 0) "Type" "eq" "page") }}
+		<section id="{{ .Title | urlize }}" class="home-section home-section-{{ .Title | urlize }}">
+			<div class="wrap">
+				<header>
+					<h2>{{ .Title }}</h2>
+				</header>
+
+				<div class="home-section-content">
+					{{ .Render }}
+				</div>
+			</div>
+		</section>
+	{{ end }}
+</main>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,35 @@
+/*********************
+SIZES
+*********************/
+$spacer: 1.5em;
+$site-width: 60em; // Useful for fixed width sites, as well as for limiting the max-width of fluid sites
+$border-radius: 3px;
+
+/*********************
+BREAKPOINTS
+*********************/
+// Use pixels for include-media-export compatibility. 'zero' breakpoint ensures the breakpoints are printed on all screen widths.
+$breakpoints: ( zero: (1 * 16px), phone: (35 * 16px), portrait: (48 * 16px), admin-bar: (48.875 * 16px), landscape: (64 * 16px), desktop: (80 * 16px) );
+
+/*********************
+COLORS
+*********************/
+@import '../node_modules/brand-colors/dist/latest/scss/brand-colors.latest.scss';
+@import '../node_modules/colors-sass/sass/variables';
+
+$grey: #e1e2e1;
+$grey-light: #f9f9f9;
+$text: #4a4a4a;
+$p: #0277bd;
+$p-l: #58a5f0;
+$p-d: #004c8c;
+$s: #e65100;
+$s-l: #ff833a;
+$s-d: #ac1900;
+
+/*********************
+TYPOGRAPHY - http://cssfontstack.com/
+*********************/
+// https://medium.com/@mwichary/system-shock-6b1dc6d6596f
+// http://markdotto.com/2018/02/07/github-system-fonts/
+$sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';

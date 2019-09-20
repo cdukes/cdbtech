@@ -1,0 +1,238 @@
+{
+	"items": 
+	[
+		
+			{
+	"title": "Woodlands of Charlottesville",
+	"weight":100,
+	"image":"woodlands-of-charlottesville-201909.jpg",
+	"website":"https://www.woodlandsofcharlottesville.com/",
+	"designer_name":"Nick Stone Group",
+	"designer_url":"https://nick-stone.com/",
+	"template_url":null,
+	"categories": ["SME","WordPress","North America"]
+}
+		
+			, {
+	"title": "Vynca Health",
+	"weight":200,
+	"image":"vynca-health-201909.jpg",
+	"website":"https://vyncahealth.com/",
+	"designer_name":null,
+	"designer_url":null,
+	"template_url":null,
+	"categories": ["SME","WordPress","North America","Asia"]
+}
+		
+			, {
+	"title": "Athena Film Festival",
+	"weight":300,
+	"image":"athena-film-festival-201909.jpg",
+	"website":"http://athenafilmfestival.com/",
+	"designer_name":"Jen Mazer",
+	"designer_url":"http://www.jenmazer.com/",
+	"template_url":null,
+	"categories": ["Nonprofit","WordPress","Publication","North America"]
+}
+		
+			, {
+	"title": "CoreLedger",
+	"weight":400,
+	"image":"coreledger-201909.jpg",
+	"website":"https://coreledger.net/",
+	"designer_name":"A Very Small Company",
+	"designer_url":"http://averysmallcompany.com/",
+	"template_url":null,
+	"categories": ["Startup","WordPress","Europe"]
+}
+		
+			, {
+	"title": "waytogo",
+	"weight":500,
+	"image":"waytogo-201909.jpg",
+	"website":"https://waytogo.cebupacificair.com/",
+	"designer_name":"A Very Small Company",
+	"designer_url":"http://averysmallcompany.com/",
+	"template_url":null,
+	"categories": ["Corporation","WordPress","Publication","Membership","Asia"]
+}
+		
+			, {
+	"title": "Virginia Law Foundation",
+	"weight":600,
+	"image":"virginia-law-foundation-201909.jpg",
+	"website":"https://www.virginialawfoundation.org/",
+	"designer_name":"Nick Stone Group",
+	"designer_url":"https://nick-stone.com/",
+	"template_url":null,
+	"categories": ["Nonprofit","WordPress","North America"]
+}
+		
+			, {
+	"title": "MACTE",
+	"weight":700,
+	"image":"macte-201909.jpg",
+	"website":"https://www.macte.org/",
+	"designer_name":"Nick Stone Group",
+	"designer_url":"https://nick-stone.com/",
+	"template_url":null,
+	"categories": ["WordPress","API","North America"]
+}
+		
+			, {
+	"title": "Sexual Being",
+	"weight":800,
+	"image":"sexual-being-201909.jpg",
+	"website":"https://sexualbeing.org/",
+	"designer_name":"Octane PR",
+	"designer_url":"https://octanepra.com/",
+	"template_url":null,
+	"categories": ["WordPress","Multi-language","North America"]
+}
+		
+			, {
+	"title": "5000 Gifts",
+	"weight":900,
+	"image":"5000-gifts-201909.jpg",
+	"website":"https://5000gifts.com/",
+	"designer_name":"Nick Stone Group",
+	"designer_url":"https://nick-stone.com/",
+	"template_url":null,
+	"categories": ["SME","Startup","WordPress","eCommerce","Membership","North America"]
+}
+		
+			, {
+	"title": "Wedding Dresses",
+	"weight":1000,
+	"image":"wedding-dresses-201909.jpg",
+	"website":"https://weddingdresses.com/",
+	"designer_name":null,
+	"designer_url":null,
+	"template_url":null,
+	"categories": ["SME","Golang","WordPress","API","North America"]
+}
+		
+			, {
+	"title": "Resume Writer Direct",
+	"weight":1100,
+	"image":"resume-writer-direct-201909.jpg",
+	"website":"https://resumewriterdirect.com/",
+	"designer_name":null,
+	"designer_url":null,
+	"template_url":null,
+	"categories": ["SME","WordPress","eCommerce","Membership","North America"]
+}
+		
+			, {
+	"title": "Resume Genius",
+	"weight":1200,
+	"image":"resume-genius-201909.jpg",
+	"website":"https://resumegenius.com/",
+	"designer_name":null,
+	"designer_url":null,
+	"template_url":null,
+	"categories": ["SME","WordPress","North America","Featured"]
+}
+		
+			, {
+	"title": "Caveman Kitchen (Nourish'd)",
+	"weight":1300,
+	"image":"caveman-kitchen-201909.jpg",
+	"website":"https://nourishd.com.au/",
+	"designer_name":"ChillyBin Pte Ltd",
+	"designer_url":"https://www.chillybin.com.sg/",
+	"template_url":null,
+	"categories": ["SME","Golang","WordPress","API","Membership","Asia"]
+}
+		
+			, {
+	"title": "Termly",
+	"weight":1400,
+	"image":"termly-201909.jpg",
+	"website":"https://termly.io",
+	"designer_name":null,
+	"designer_url":null,
+	"template_url":null,
+	"categories": ["SME","WordPress","Multi-language","North America","Europe"]
+}
+		
+			, {
+	"title": "Perk Coffee",
+	"weight":1500,
+	"image":"perk-coffee-201909.jpg",
+	"website":"https://perkcoffee.co/sg/",
+	"designer_name":"ChillyBin Pte Ltd",
+	"designer_url":"https://www.chillybin.com.sg/",
+	"template_url":null,
+	"categories": ["SME","Golang","WordPress","eCommerce","API","Membership","Multi-site","Asia"]
+}
+		
+			, {
+	"title": "SilverKris",
+	"weight":1600,
+	"image":"silverkris-201909.jpg",
+	"website":"https://www.silverkris.com/",
+	"designer_name":"A Very Small Company",
+	"designer_url":"http://averysmallcompany.com/",
+	"template_url":null,
+	"categories": ["Corporation","WordPress","Publication","Asia"]
+}
+		
+			, {
+	"title": "Atlas by Etihad",
+	"weight":1700,
+	"image":"atlas-by-etihad-201909.jpg",
+	"website":"https://atlasbyetihad.com/",
+	"designer_name":"A Very Small Company",
+	"designer_url":"http://averysmallcompany.com/",
+	"template_url":null,
+	"categories": ["Corporation","WordPress","API","Publication","Multi-site","Multi-language","Middle East","Featured"]
+}
+		
+			, {
+	"title": "Sejong Korean Language School",
+	"weight":1800,
+	"image":"sejong-kls-201909.jpg",
+	"website":"https://www.sejong.com.sg/",
+	"designer_name":"A Very Small Company",
+	"designer_url":"http://averysmallcompany.com/",
+	"template_url":null,
+	"categories": ["SME","WordPress","eCommerce","Asia","Featured"]
+}
+		
+			, {
+	"title": "Esquire Singapore",
+	"weight":1900,
+	"image":"esquire-sg-201909.jpg",
+	"website":"https://esquiresg.com/",
+	"designer_name":"A Very Small Company",
+	"designer_url":"http://averysmallcompany.com/",
+	"template_url":null,
+	"categories": ["Corporation","WordPress","Publication","Asia","Featured"]
+}
+		
+			, {
+	"title": "Legal Templates.net",
+	"weight":2000,
+	"image":"legal-templates-201909.jpg",
+	"website":"https://legaltemplates.net/",
+	"designer_name":null,
+	"designer_url":null,
+	"template_url":null,
+	"categories": ["SME","WordPress","PSD","North America","Featured"]
+}
+		
+			, {
+	"title": "SDxCentral",
+	"weight":2100,
+	"image":"sdxcentral-201909.jpg",
+	"website":"https://www.sdxcentral.com/",
+	"designer_name":"SDNCentral",
+	"designer_url":null,
+	"template_url":null,
+	"categories": ["SME","Golang","WordPress","API","Publication","Membership","North America","Featured"]
+}
+		
+	]
+
+}
