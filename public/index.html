@@ -9,22 +9,22 @@
 	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 	<link rel="dns-prefetch" href="https://res.cloudinary.com">
 
-	<![if !IE]>
-	<script>
-		window.Muscula = { settings:{
-			logId:'D2dkheG-y5debb', suppressErrors: false
-		}};
-		(function () {
-			var m = document.createElement('script'); m.type = 'text/javascript'; m.async = true;
-			m.src = (window.location.protocol == 'https:' ? 'https:' : 'http:') +
-			'//musculahq.appspot.com/Muscula8.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(m, s);
-			window.Muscula.run=function(){var a;eval(arguments[0]);window.Muscula.run=function(){};};
-			window.Muscula.errors=[];window.onerror=function(){window.Muscula.errors.push(arguments);
-			return window.Muscula.settings.suppressErrors===undefined;}
-		})();
+	<script type='text/javascript' src="https://errorpilot.com/t.js" async></script>
+
+	<script type='text/javascript'>
+		window.ErrorPilot = {
+			errors: [],
+			start: window.performance ? null : Date.now(),
+			config: {
+				accountUUID: '450927de-4be1-4364-a1c7-1f5a40f05f0e'
+			}
+		};
+
+		window.onerror = function() {
+			window.ErrorPilot.errors.push(arguments);
+			return !!window.ErrorPilot.config.suppressErrors;
+		}
 	</script>
-	<![endif]>
 
 	<meta property="og:title" content="Web Development by Cooper Dukes - CDBTech, LLC">
 	<meta property="og:type" content="website">
@@ -34,7 +34,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="https://cdbtech.com/favicon.ico">
 
 	<meta name="google-site-verification" content="k9GEIq6x4EZds5g3lLkaHFjAx7auk30sr1O5MDeLWHk">
-	<meta name="generator" content="Hugo 0.58.2" />
+	<meta name="generator" content="Hugo 0.62.1" />
 
 	<link rel="canonical" href="https://cdbtech.com/">
 
@@ -111,31 +111,25 @@
 				</header>
 
 				<div class="home-section-content">
-					
-
-<blockquote>
-<p>I&rsquo;m <em>Cooper Dukes</em>, a guy who makes cool new things on the Internet.</p>
+					<blockquote>
+<p>I'm <em>Cooper Dukes</em>, a guy who makes cool new things on the Internet.</p>
 </blockquote>
-
 
 	<img src="https://res.cloudinary.com/cdbtech/image/fetch/w_250,h_228,dpr_auto/https://cdbtech.com/media/cooper.jpg" class="alignright" width="250" height="228" alt="Cooper Dukes">
 
 
-
 <p><strong>Personal Mission</strong>: To develop systems that enable people to eschew inefficient, nonessential tasks from their businesses, activities, and lives, empowering them to pursue unencumbered creativity and change.</p>
-
 <p><strong>Current Residence</strong>: Durham, North Carolina</p>
-
 <h3 id="why">Why?</h3>
-
 <p>I believe that Internet technology is about far more than computer choice or database size&hellip;</p>
-
 <blockquote>
-<p>It&rsquo;s about intelligently designing <em>thoughtful</em> processes around human-machine interaction.</p>
-
-<p>It&rsquo;s about finding <em>elegant</em> solutions to business problems, eliminating the pain of rote tasks, and nurturing healthier business practices that make work more rewarding, more productive, and more innovative.</p>
-
-<p>And it&rsquo;s about <em>understanding</em> how developments are <em>changing the way we change</em>, creating a million new intersections between information and technology.</p>
+<p>It's about intelligently designing <em>thoughtful</em> processes around human-machine interaction.</p>
+</blockquote>
+<blockquote>
+<p>It's about finding <em>elegant</em> solutions to business problems, eliminating the pain of rote tasks, and nurturing healthier business practices that make work more rewarding, more productive, and more innovative.</p>
+</blockquote>
+<blockquote>
+<p>And it's about <em>understanding</em> how developments are <em>changing the way we change</em>, creating a million new intersections between information and technology.</p>
 </blockquote>
 
 				</div>
@@ -149,18 +143,11 @@
 				</header>
 
 				<div class="home-section-content">
-					
-
-<p>I typically say that I offer <strong>Business Technology Strategy</strong> solutions in three baskets: <em>Web Development</em>, <em>Technology Consulting</em>, and <em>Technology Training</em>. The idea is that I do frontend and backend web development, and I also provide auxiliary services related to understanding your technology needs and successfully using the products I build.</p>
-
+					<p>I typically say that I offer <strong>Business Technology Strategy</strong> solutions in three baskets: <em>Web Development</em>, <em>Technology Consulting</em>, and <em>Technology Training</em>. The idea is that I do frontend and backend web development, and I also provide auxiliary services related to understanding your technology needs and successfully using the products I build.</p>
 <p>You can read below for more details, but I think the best way to understand what I offer to see actual projects in my portfolio.</p>
-
 <h3 id="technology-consulting">Technology Consulting</h3>
-
 <p>Technology Consulting is about exploring your needs and constraints in order to find the right web solutions for you. The process usually begins with an initial discussion of <em>what</em> you’re trying to do, <em>why</em> you’re trying to do it, and <em>how</em> you suspect it should be done.</p>
-
 <p>I then explore the problem in further depth, examining your current systems and researching what others have done to successfully resolve similar issues in order to make meaningful, actionable recommendations. You’ll want to consider Technology Consulting if you have questions like the following:</p>
-
 <ul>
 <li>How should I structure my business’s systems to be more efficient?</li>
 <li>What are cost-effective solutions to common business functions, such as email, website hosting, and accounting?</li>
@@ -169,11 +156,8 @@
 <li>What social media should I be using? How should I be using it?</li>
 <li>Should I be blogging? If so, how often and on what topics?</li>
 </ul>
-
 <h3 id="web-development">Web Development</h3>
-
 <p>My core Website Design expertise is with HTML5, CSS3, JavaScript, jQuery, and PHP, and my platform of choice is WordPress, though I certainly can work with other systems. I offer the following standard website design packages:</p>
-
 <ul>
 <li><strong>Hybrid Design</strong> - This is the ‘lite’ version of the design process, where we work together to find a premium theme from a third-party vendor. I use this as the starting point for your website and make the necessary visual and functionality modifications to deliver a quality product that does what you need. <em>Great for small businesses who are just getting started online or individuals looking for a portfolio site.</em></li>
 <li><strong>Comprehensive Design</strong> - These projects follow the full design process. We explore your web needs, create original graphic mockups, code the site in a robust framework, and work to develop content. Your input is sought at every step of the process. <em>Great for businesses who already have a website but are looking to upgrade.</em></li>
@@ -181,18 +165,14 @@
 <li><strong>Theme Port</strong> (WordPress only) - Is your site using an older WordPress theme and just not running well anymore? Do you want to keep the look mostly intact, but make some visual upgrades, too? I can take your current theme and transfer it to a modern WordPress framework, such as WooTheme’s Canvas or StudioPress’s Genesis. This is a good way to give new life to your site without the hands-on time or cost of a full redesign. The code will be new and future-proof, but the site itself will look familiar.</li>
 <li><strong>Microsite</strong> - This is a basic informational website (usually between one and five pages). Perfect for a splash page for an event, a ‘coming soon’ page preceding a product or full site launch, or a company without much content. Can be implemented as a static HTML page, or incorporated with a content management system.</li>
 </ul>
-
 <h3 id="technology-training">Technology Training</h3>
-
 <p>You may have the best technology infrastructure money can buy, but you’ll never utilize its full potential if you lack the proper Technology Training to use it. I offer one-on-one tutoring, small group training sessions, and workshops on a variety of technologies and topics, including:</p>
-
 <ul>
 <li>From Idea to Prototype: Getting Your Company Started on the Web</li>
 <li>WordPress for Marketers</li>
 <li>WordPress for Webmasters</li>
 <li>Web Content Development (including SEO best practices)</li>
 </ul>
-
 <p>I also provide documentation services.</p>
 
 				</div>
@@ -206,7 +186,7 @@
 				</header>
 
 				<div class="home-section-content">
-					<p>A curated portfolio of projects I&rsquo;ve completed.</p>
+					<p>A curated portfolio of projects I've completed.</p>
 
 
 <div id="projects-app"></div>
@@ -238,9 +218,7 @@
 
 	<div itemprop="reviewBody">
 		<p>Cooper and his expertise have been invaluable to our organization. Despite being located halfway around the globe, he was more reliable and responsive than any other web developer we have used. He provided us with a good balance of options, both short and long term, that have allowed us to create strategic web presence as our organization grows.</p>
-
 <p>Cooper is also one of the rare developers that doesn’t let his broad technical knowledge get in the way of clear and concise explanations. He lays out your options and is singularly focused on working with you to find the best solutions. Additionally, he is always thinking a couple of steps ahead to ensure that you are in the best position to be effective both today and tomorrow.</p>
-
 <p>Cooper worked fast, on budget and provided us with fantastic results. I couldn’t ask for anything else.</p>
 
 	</div>
@@ -263,7 +241,6 @@
 
 	<div itemprop="reviewBody">
 		<p>We’ve been trying a lot of developers and found out that the most difficult part is the communication, which makes Cooper an astounding developer. Besides the communication, Cooper manages to be efficient and organized on every project that we’ve worked on, always knowledgeable to ask the right questions in the beginning, guiding us in the right directions, which saves us a lot of time and money.</p>
-
 <p>Cooper is the perfect solution for a small business like us.</p>
 
 	</div>
@@ -517,7 +494,6 @@
 
 	<div itemprop="reviewBody">
 		<p>Cooper did an exceptional job reformatting and designing our website. After some challenging experiences working with web designers we were thankful to find someone as <em>highly skilled</em>, <em>responsive</em> and <em>easy to work with</em>.</p>
-
 <p>We knew exactly what we wanted in terms of design and function for our site, but we didn’t know how to get there. Cooper responds to questions and concerns in a timely fashion, has <em>innovative ideas</em> and <em>gets the work done</em>. We were <em>absolutely thrilled</em> with the end result and continue to reap the rewards of a well-designed and very user-friendly web-site. We can’t recommend Cooper highly enough – he’s <em>hard-working</em>, <em>focused</em> and <em>always professional</em>. Thanks for your awesome work, Cooper!</p>
 
 	</div>
@@ -575,7 +551,7 @@
 	<meta itemprop="datePublished" content="2013-03-29">
 
 	<div itemprop="reviewBody">
-		<p>I cannot recommend Cooper highly enough. He’s <em>extremely professional</em>, offers a <em>quick turnaround</em> and explains in very concise detail what he has done to enhance your project. He’s extremely <em>personable</em> and <em>good value</em> for money. You cannot underestimate having someone work on the finer coding details of your web project who really understands what they are doing. <sup>10</sup>&frasl;<sub>10</sub> in my books!</p>
+		<p>I cannot recommend Cooper highly enough. He’s <em>extremely professional</em>, offers a <em>quick turnaround</em> and explains in very concise detail what he has done to enhance your project. He’s extremely <em>personable</em> and <em>good value</em> for money. You cannot underestimate having someone work on the finer coding details of your web project who really understands what they are doing. 10/10 in my books!</p>
 
 	</div>
 
@@ -614,7 +590,6 @@
 
 	<div itemprop="reviewBody">
 		<p>Cooper Dukes is the <em>best of the best</em>. We feel like we discovered the <em>“Hope Diamond” of the development world</em> when we connected with him. From our very first project, it was apparent that Cooper is not only a gifted developer, but <em>professional, reliable, knowledgeable and consistent</em>.</p>
-
 <p>He is very <em>detail-oriented</em> and provides an enormous amount of <em>support and expertise</em>. He is one of the key players adding to the success of both BASHelorette and CS Creative Suite. We would not be where we are today without Cooper, and look forward to many future collaborations in coming years. If you work with Cooper, your expectations will be exceeded – he is a <em>delight to work with.</em></p>
 
 	</div>
@@ -654,7 +629,6 @@
 
 	<div id="a-00a19e3-b" class="accordion-body" role="tabpanel" aria-labelledby="a-00a19e3-h">
 		<p>I offer fixed project pricing only for work that I have been involved in from the beginning, where I am familiar with the code and can vouch for its quality.</p>
-
 <p>All other work can be done on an hourly basis.</p>
 
 	</div>
@@ -707,7 +681,6 @@
 
 	<div id="a-b0d59fb-b" class="accordion-body" role="tabpanel" aria-labelledby="a-b0d59fb-h">
 		<p>Yes, I have a general contract, applicable to any work we do together. The goal of my contract is to make sure we each understand what our responsibilities are, not to deceive you. As such, it’s written in plain English and available in a version controlled <a href="https://github.com/cdukes/general-contract" title="General Contract">GitHub repository</a> for you to review at any time.</p>
-
 <p>For fixed-price work, I will also submit a project proposal, outlining the scope, timeline, and price for the individual project.</p>
 
 	</div>
@@ -726,7 +699,6 @@
 
 	<div id="a-cfcf6f9-b" class="accordion-body" role="tabpanel" aria-labelledby="a-cfcf6f9-h">
 		<p>Depending on the size of the project, I usually require a deposit of 20%-40%. An additional sum may be payable at the midpoint, and the balance is payable on completion.</p>
-
 <p>Payment terms will be clearly stated in any project proposal I provide.</p>
 
 	</div>
@@ -745,7 +717,6 @@
 
 	<div id="a-3aaa0ea-b" class="accordion-body" role="tabpanel" aria-labelledby="a-3aaa0ea-h">
 		<p>For fixed price work, I invoice as per our agreed upon payment terms.</p>
-
 <p>For hourly work, I invoice (approximately) on the last day of the month.</p>
 
 	</div>
@@ -764,7 +735,6 @@
 
 	<div id="a-2c50ab3-b" class="accordion-body" role="tabpanel" aria-labelledby="a-2c50ab3-h">
 		<p>A full site development project typically takes 6-9 weeks for design, development, and review. Coding a provided design can take a few weeks less.</p>
-
 <p>I try to turn around hourly work items within 2-4 business days. Of course, this may vary based on the complexity of the work.</p>
 
 	</div>
@@ -783,12 +753,9 @@
 
 	<div id="a-d643451-b" class="accordion-body" role="tabpanel" aria-labelledby="a-d643451-h">
 		<p>From my <a href="https://github.com/CDBTechLLC/general-contract">general contract</a>:</p>
-
 <blockquote>
 <p>I will test any views that I build for you in the current stable version of the four major desktop browsers by market share, as well as in iOS. Users of older or less capable browsers or devices will experience a design that is appropriate to the capabilities of their software.</p>
-
 <p>For example, as of July 21, 2018, browser coverage would be:</p>
-
 <ul>
 <li>Chrome 67 (tested), with any bugs in v66 covered</li>
 <li>Firefox 61 (tested), with any bugs in v60 covered</li>
@@ -797,7 +764,6 @@
 <li>Edge 42 (tested), with any bugs in v41 covered</li>
 <li>Internet Explorer 11 (tested)</li>
 </ul>
-
 <p>If you need me to consider other or older browsers, I will charge you at my standard hourly rate.</p>
 </blockquote>
 
@@ -817,7 +783,6 @@
 
 	<div id="a-53951af-b" class="accordion-body" role="tabpanel" aria-labelledby="a-53951af-h">
 		<p>It depends. A CMS will allow you to update your website without calling me (or learning HTML), but implementing a CMS adds a lot of weight to the backend, since you’ll need to communicate with a database on every page load (caching aside). This adds extra loading time to your site, compared to just using static HTML.</p>
-
 <p>You’ll have to ask yourself, “Will I make regular updates to this website, once it’s completed?” If you won’t, then it may be best to opt for the simpler non-CMS solution.</p>
 
 	</div>
@@ -836,7 +801,6 @@
 
 	<div id="a-4203f50-b" class="accordion-body" role="tabpanel" aria-labelledby="a-4203f50-h">
 		<p>WordPress. Easily. I’ve worked with the big three open source CMS’s (WordPress, Drupal, Joomla), as well as many of the lesser-known ones, and WordPress is absolutely the best in my opinion:</p>
-
 <ul>
 <li>It has a massive developer community, meaning that the code is thoroughly documented and that there’s a huge pool of knowledge to draw upon when trying to code custom functionality. This reduces development time, and makes for better solutions.</li>
 <li>It’s updated on a regular interval. WP releases a major update twice each year, innovating new features and improving performance on a consistent cycle.</li>
@@ -860,19 +824,14 @@
 
 	<div id="a-485743a-b" class="accordion-body" role="tabpanel" aria-labelledby="a-485743a-h">
 		<p>When was the plugin last updated? Is it currently maintained? Is the source reputable? How much customization will be required to make it fit your site? How well does it perform? It is secure?</p>
-
 <p>Plugins may look like ideal solutions. (Who would argue with free?) However, many plugins you find online are long out of date. Even those that aren’t will often mesh poorly with your site. What’s the point of paying for a bespoke web presence when you just throw a neon green contact form into the sidebar on launch day?</p>
-
 <p>In addition, plugins, by definition, aren’t as tightly integrated into the rest of the site as custom developed functionality. They often execute when not needed, or load extra files on every page, or just work really inefficiently.</p>
-
 <p>Generally, I try to use as few plugins as possible (&lt;5) on the sites I design. When I do use them, I make sure that:</p>
-
 <ol>
 <li>They don’t perform a functionality I could easily code myself.</li>
 <li>They’re actively developed by a reputable source.</li>
 <li>They don’t excessively hinder performance.</li>
 </ol>
-
 <p>For instance, on this site I’m using Gravity Forms, WordPress SEO, and Advanced Custom Fields. That’s it.</p>
 
 	</div>
@@ -891,7 +850,6 @@
 
 	<div id="a-a5ea297-b" class="accordion-body" role="tabpanel" aria-labelledby="a-a5ea297-h">
 		<p>I run all modules I build through the relevant validation tools. For example, I use the W3C validator for HTML, JSHint for Javascript, and Google’s PageSpeed and WebPagetest for webpage performance.</p>
-
 <p>I evaluate these reports and either fix the issues flagged or explain my reasons not to (such as the validator’s rule being out of date or the performance boost not being possible on your current server).</p>
 
 	</div>
@@ -927,7 +885,6 @@
 
 	<div id="a-1b8917a-b" class="accordion-body" role="tabpanel" aria-labelledby="a-1b8917a-h">
 		<p>No site is 100% secure in all circumstances, but I do my best and am confident in the products I deliver. Security is multi-faceted issue, and I try to address every aspect, including:</p>
-
 <ul>
 <li>Writing secure code, with version control</li>
 <li>Making regular backups</li>
@@ -953,13 +910,11 @@
 
 	<div id="a-87f801b-b" class="accordion-body" role="tabpanel" aria-labelledby="a-87f801b-h">
 		<p>Probably not much. I’ve worked with dozens of hosts over the years, and most are pretty awful. Personally, I only recommend a few hosts, based on your budget/scale:</p>
-
 <ul>
 <li>WPEngine, for premium WordPress hosting</li>
 <li>DreamHost, for small sites</li>
 <li>Amazon Web Services, for larger implementations</li>
 </ul>
-
 <p>For domain registration, I use and recommend Google Domains.</p>
 
 	</div>
@@ -978,9 +933,7 @@
 
 	<div id="a-d60dea6-b" class="accordion-body" role="tabpanel" aria-labelledby="a-d60dea6-h">
 		<p>You will need to provide site content: text, images, and videos. I can build you an amazing website, but no one will ever see it if you don’t add in the words to sell your product or service.</p>
-
 <p>I can help you develop your sitemap, which will determine what pages you’ll need to provide content for, and I’ll usually upload the initial batch of content for you. I can also recommend stock image resources, and in some cases, I can provide copy writing services.</p>
-
 <p>However, I truly do believe that <em>you</em> are the person best qualified to write about what you do. I know writing content can be hard, but I discourage the use of copy writing or stock imagery services most of the time.</p>
 
 	</div>
@@ -999,7 +952,6 @@
 
 	<div id="a-6f88b2b-b" class="accordion-body" role="tabpanel" aria-labelledby="a-6f88b2b-h">
 		<p>I try to write modular code, broken down into easy to follow chunks, with clearly named functions. I try to conform to the <a href="http://codex.wordpress.org/WordPress_Coding_Standards">WordPress Coding Standards</a> as much possible and create consistent, well-integrated interfaces when extending currently existing software.</p>
-
 <p>The exact text/image documentation provided will vary by project. I want to make sure that my code is clear and that you’re able to use the products I create, but I don’t want to write <em>volumes</em> unnecessarily. Please specify your documentation requirements before we get started, so I can provide you with what you need.</p>
 
 	</div>
@@ -1035,7 +987,6 @@
 
 	<div id="a-b9e5955-b" class="accordion-body" role="tabpanel" aria-labelledby="a-b9e5955-h">
 		<p>I think it’s disingenuous to speak in the <a href="http://en.wikipedia.org/wiki/Royal_we">royal we</a>. Although I work in teams every day and can all kinds of specialists to your project if needed, I’m one person with a company right now.</p>
-
 <p><a href="http://gettingreal.37signals.com/ch08_Hire_Less_and_Hire_Later.php">When I have no choice</a>, I’ll hire someone. Then, I’ll find-and-replace all the <em>I’s</em> into <em>we’s</em>. =)</p>
 
 	</div>
@@ -1054,7 +1005,6 @@
 
 	<div id="a-82e00bc-b" class="accordion-body" role="tabpanel" aria-labelledby="a-82e00bc-h">
 		<p>I can keep costs low on several fronts, and pass some of that that value onto you:</p>
-
 <ol>
 <li><em>I build efficient processes</em>, time tracking everything I do (billable or not) and finding ways to do it better.</li>
 <li><em>I avoid excess</em>. My proposals are 1-3 pages, not 20-40. I don’t show up at your office when an email will do (and give you the freedom to reply at your convenience).</li>
@@ -1079,8 +1029,7 @@
 				</header>
 
 				<div class="home-section-content">
-					<p>You can email me at <a href="mailto:hello@cdbtech.com">hello@cdbtech.com</a>. I&rsquo;ll get back to you as soon as I can (usually within a few hours).</p>
-
+					<p>You can email me at <a href="mailto:hello@cdbtech.com">hello@cdbtech.com</a>. I'll get back to you as soon as I can (usually within a few hours).</p>
 <p>You can also find me on <a href="https://github.com/cdukes">GitHub</a>.</p>
 
 				</div>
@@ -1097,7 +1046,7 @@
 			</div>
 
 			<div class="right">
-				<p>&copy; 2019 – CDBTech, LLC</p>
+				<p>&copy; 2020 – CDBTech, LLC</p>
 			</div>
 		</div>
 	</footer>

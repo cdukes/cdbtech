@@ -9,22 +9,22 @@
 	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 	<link rel="dns-prefetch" href="https://res.cloudinary.com">
 
-	<![if !IE]>
-	<script>
-		window.Muscula = { settings:{
-			logId:'D2dkheG-y5debb', suppressErrors: false
-		}};
-		(function () {
-			var m = document.createElement('script'); m.type = 'text/javascript'; m.async = true;
-			m.src = (window.location.protocol == 'https:' ? 'https:' : 'http:') +
-			'//musculahq.appspot.com/Muscula8.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(m, s);
-			window.Muscula.run=function(){var a;eval(arguments[0]);window.Muscula.run=function(){};};
-			window.Muscula.errors=[];window.onerror=function(){window.Muscula.errors.push(arguments);
-			return window.Muscula.settings.suppressErrors===undefined;}
-		})();
+	<script type='text/javascript' src="https://errorpilot.com/t.js" async></script>
+
+	<script type='text/javascript'>
+		window.ErrorPilot = {
+			errors: [],
+			start: window.performance ? null : Date.now(),
+			config: {
+				accountUUID: '450927de-4be1-4364-a1c7-1f5a40f05f0e'
+			}
+		};
+
+		window.onerror = function() {
+			window.ErrorPilot.errors.push(arguments);
+			return !!window.ErrorPilot.config.suppressErrors;
+		}
 	</script>
-	<![endif]>
 
 	<meta property="og:title" content="Web Development by Cooper Dukes - CDBTech, LLC">
 	<meta property="og:type" content="website">
@@ -34,7 +34,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="https://cdbtech.com/favicon.ico">
 
 	<meta name="google-site-verification" content="k9GEIq6x4EZds5g3lLkaHFjAx7auk30sr1O5MDeLWHk">
-	<meta name="generator" content="Hugo 0.58.2" />
+	<meta name="generator" content="Hugo 0.62.1" />
 
 	<link rel="canonical" href="https://cdbtech.com/intake/">
 
@@ -187,7 +187,7 @@
 			</div>
 
 			<div class="right">
-				<p>&copy; 2019 – CDBTech, LLC</p>
+				<p>&copy; 2020 – CDBTech, LLC</p>
 			</div>
 		</div>
 	</footer>
