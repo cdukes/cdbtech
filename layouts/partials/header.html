@@ -9,9 +9,7 @@
 	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 	<link rel="dns-prefetch" href="https://res.cloudinary.com">
 
-	<script type='text/javascript' src="https://errorpilot.com/t.js" async></script>
-
-	<script type='text/javascript'>
+	<script type="text/javascript">
 		window.ErrorPilot = {
 			errors: [],
 			start: window.performance ? null : Date.now(),
@@ -25,6 +23,8 @@
 			return !!window.ErrorPilot.config.suppressErrors;
 		}
 	</script>
+
+	<script type="text/javascript" src="https://errorpilot.com/t.js" async></script>
 
 	<meta property="og:title" content="{{ .Site.Title }} - {{ .Site.Params.companyName }}">
 	<meta property="og:type" content="website">
