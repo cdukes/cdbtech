@@ -4,7 +4,7 @@
 
 		<nav id="site-navigation" class="site-navigation">
 			{{ range (where (where .Site.Pages "Weight" "gt" 0) "Type" "eq" "page") }}
-				<a href="#{{ .Title | urlize }}" rel="nofollow" data-scroll data-section="{{ .Title | urlize }}">
+				<a href="{{ .Site.BaseURL }}#{{ .Title | urlize }}" rel="nofollow" data-scroll data-section="{{ .Title | urlize }}">
 					{{ .Title }}
 				</a>
 			{{ end }}

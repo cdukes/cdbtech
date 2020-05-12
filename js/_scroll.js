@@ -47,6 +47,10 @@ import SmoothScroll from 'smooth-scroll';
 		let active_el = false;
 
 		for (let i = 0; i < nav_els.length; i++) {
+			if( !target_els.hasOwnProperty(nav_els[i].dataset.section) ) {
+				continue;
+			}
+
 			if (target_els[nav_els[i].dataset.section].offsetTop > lastScrollY) {
 				break;
 			}
