@@ -1,7 +1,7 @@
 /* globals ga */
 
 (function() {
-	let el = document.querySelector(`.home-section-testimonials .btn`);
+	const el = document.querySelector(`.home-section-testimonials .btn`);
 
 	if (!el) {
 		return;
@@ -10,7 +10,7 @@
 	function open() {
 		document.querySelector(`.home-section-testimonials`).classList.add(`open`);
 
-		if (`function` === typeof ga) {
+		if (typeof ga === `function`) {
 			ga(`send`, `event`, `Testimonials`, `Click`, `View More`);
 		}
 	}

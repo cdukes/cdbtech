@@ -1,5 +1,5 @@
 (function() {
-	let button_el = document.getElementById(`toggle-nav-menu`);
+	const button_el = document.getElementById(`toggle-nav-menu`);
 
 	if (!button_el) {
 		return;
@@ -13,12 +13,12 @@
 })();
 
 (function() {
-	let container_el = document.getElementById(`site-navigation`);
+	const container_el = document.getElementById(`site-navigation`);
 	if (!container_el) {
 		return;
 	}
 
-	let link_els = container_el.getElementsByTagName(`a`);
+	const link_els = container_el.getElementsByTagName(`a`);
 	if (link_els.length === 0) {
 		return;
 	}

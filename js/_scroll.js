@@ -8,22 +8,23 @@ import SmoothScroll from 'smooth-scroll';
 
 (function() {
 	// Setup global vars
-	let nav_el = document.getElementById(`site-navigation`),
-		target_els = {},
-		lastScrollY = 0,
+	const nav_el = document.getElementById(`site-navigation`),
+		target_els = {};
+
+	let lastScrollY = 0,
 		ticking = false;
 
 	if (!nav_el) {
 		return;
 	}
 
-	let nav_els = nav_el.getElementsByTagName(`a`);
+	const nav_els = nav_el.getElementsByTagName(`a`);
 	if (nav_els.length === 0) {
 		return;
 	}
 
 	function trigger_pageview(slug) {
-		if (`function` !== typeof ga) {
+		if (typeof ga !== `function`) {
 			return;
 		}
 
@@ -33,7 +34,7 @@ import SmoothScroll from 'smooth-scroll';
 
 	function init() {
 		for (let i = 0; i < nav_els.length; i++) {
-			let target_el = document.getElementById(nav_els[i].dataset.section);
+			const target_el = document.getElementById(nav_els[i].dataset.section);
 			if (target_el) {
 				target_els[nav_els[i].dataset.section] = target_el;
 			}

@@ -2,3 +2,7 @@
 node_modules
 /*.key
 /*.pem
+/static/build/js/*-css.js
+/static/build/js/*-css.min.js
+/public/build/js/*-css.js
+/public/build/js/*-css.min.js

@@ -3,7 +3,7 @@
 import App from './projects/app.vue';
 
 (function() {
-	let app_el = document.getElementById(`projects-app`);
+	const app_el = document.getElementById(`projects-app`);
 
 	if( !app_el ) {
 		return;

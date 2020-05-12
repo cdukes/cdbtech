@@ -130,7 +130,7 @@ export default {
 		NavItem
 	},
 	data() {
-		let data = {};
+		const data = {};
 		data.loading = true;
 		data.projects = [];
 		data.selected = [];
@@ -138,7 +138,7 @@ export default {
 	},
 	computed: {
 		get_filtered_projects() {
-			let projects = [],
+			const projects = [],
 				categories = this.selected.length === 0 ? [`Featured`] : this.selected;
 
 			for( let i = 0; i < this.projects.length; i++ ) {
@@ -168,7 +168,7 @@ export default {
 			return false;
 		},
 		get_projects() {
-			let self = this;
+			const self = this;
 
 			fetch(`project/index.json`)
 				.then(response => response.json())
@@ -189,7 +189,7 @@ export default {
 				});
 		},
 		toggle(category) {
-			let idx = this.selected.indexOf(category);
+			const idx = this.selected.indexOf(category);
 
 			if( idx === -1 ) {
 				this.selected.push(category);

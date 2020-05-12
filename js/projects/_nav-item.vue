@@ -21,13 +21,13 @@ export default {
 		}
 	},
 	data() {
-		let data = {};
+		const data = {};
 		data.selected = false;
 		return data;
 	},
 	computed: {
 		classes() {
-			let classes = {};
+			const classes = {};
 			classes.btn = true;
 			classes[`btn-solid`] = true;
 			classes.active = this.selected;

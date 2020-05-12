@@ -1,7 +1,7 @@
 /* globals ga */
 
 (function() {
-	let els = document.getElementsByClassName(`accordion`);
+	const els = document.getElementsByClassName(`accordion`);
 	if (els.length === 0) {
 		return;
 	}
@@ -14,7 +14,7 @@
 			return;
 		}
 
-		if (`function` === typeof ga) {
+		if (typeof ga === `function`) {
 			ga(
 				`send`,
 				`event`,
