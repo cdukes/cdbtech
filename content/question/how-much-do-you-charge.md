@@ -4,4 +4,4 @@
    "weight": 20
 }
 
-**My current hourly rate is USD 105 (SGD 145). Fixed price projects generally cost between SGD 2,700 and 7,000 (USD 2,000 – 5,500).**
+**My current hourly rate is USD 115 (SGD 155). Fixed price projects generally cost between SGD 2,700 and 7,000 (USD 2,000 – 5,500).**
