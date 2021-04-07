@@ -1,8 +1,11 @@
 .DS_Store
 node_modules
+.eslintcache
 /*.key
 /*.pem
 /static/build/js/*-css.js
 /static/build/js/*-css.min.js
+/static/build/js/*.LICENSE.txt
 /public/build/js/*-css.js
 /public/build/js/*-css.min.js
+/public/build/js/*.js.LICENSE.txt

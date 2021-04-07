@@ -22,8 +22,8 @@ module.exports = (env, argv) => {
 		plugins: [
 			new VueLoaderPlugin(),
 			new MiniCssExtractPlugin({
-				moduleFilename: ({ name }) => {
-					const slug = name.replace(`-css`, ``);
+				filename: pathData => {
+					const slug = pathData.chunk.name.replace(`-css`, ``);
 
 					return argv.mode === `production` ? `css/${slug}.min.css` : `css/${slug}.css`;
 				}
@@ -53,8 +53,22 @@ module.exports = (env, argv) => {
 						{
 							loader: `postcss-loader`,
 							options: {
-								config: {
-									path: `config/`
+								postcssOptions: {
+									plugins: [
+										[
+											`postcss-focus`
+										],
+										[
+											`rfs`
+										],
+										[
+											`autoprefixer`,
+											{
+												cascade: true,
+												flexbox: false
+											}
+										]
+									]
 								}
 							}
 						},
