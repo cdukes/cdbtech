@@ -56,9 +56,6 @@ module.exports = (env, argv) => {
 								postcssOptions: {
 									plugins: [
 										[
-											`postcss-focus`
-										],
-										[
 											`rfs`
 										],
 										[
@@ -81,21 +78,6 @@ module.exports = (env, argv) => {
 		watch: argv.mode !== `production`,
 		stats: `errors-warnings`
 	};
-
-	if( argv.mode === `production` ) {
-		config.module.rules.push(
-			{
-				test: /\.js$/,
-				exclude: /(node_modules|admin)/,
-				use: {
-					loader: `babel-loader`,
-					options: {
-						presets: [`@babel/preset-env`]
-					}
-				}
-			}
-		);
-	}
 
 	return config;
 };

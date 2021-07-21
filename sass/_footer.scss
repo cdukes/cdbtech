@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 .site-footer {
 	padding: .75em .5em;
 	border-bottom: .5em solid $p-d;
@@ -31,7 +33,7 @@
 		}
 
 		.left {
-			margin-bottom: ($spacer / 2);
+			margin-bottom: math.div($spacer, 2);
 		}
 
 		.right {

@@ -120,8 +120,6 @@
 </template>
 
 <script>
-/* eslint compat/compat:1 */
-
 import NavItem from './_nav-item.vue';
 
 export default {

@@ -10,27 +10,21 @@
 		"smooth-scroll": "*"
 	},
 	"devDependencies": {
-		"@babel/core": "*",
-		"@babel/preset-env": "*",
 		"autoprefixer": "*",
-		"babel-eslint": "*",
-		"babel-loader": "*",
 		"css-loader": "*",
 		"csscomb": "*",
 		"eslint": "*",
-		"eslint-plugin-compat": "*",
 		"eslint-plugin-vue": "*",
 		"mini-css-extract-plugin": "*",
 		"npm-run-all": "*",
 		"postcss": "*",
-		"postcss-focus": "*",
 		"postcss-loader": "*",
 		"rfs": "*",
 		"rimraf": "*",
 		"sass": "*",
 		"sass-loader": "*",
-		"svg-sprite": "*",
-		"vue-loader": "*",
+		"vue": "^2",
+		"vue-loader": "^15",
 		"vue-template-compiler": "*",
 		"watch": "*",
 		"webpack": "*",
@@ -42,18 +36,16 @@
 		"eslint": "eslint --cache -c config/eslint.json --fix '{js,config}/**/*.{js,vue}'",
 		"webpack-development": "webpack --config=config/webpack.config.js --mode=development",
 		"webpack-production": "webpack --config=config/webpack.config.js --mode=production",
-		"svg_sprite": "svg-sprite --symbol --symbol-dest= --shape-id-generator=icon-%s --symbol-inline --symbol-sprite=icons.svg --shape-dim-width=100 --shape-dim-height=100 --shape-dim-precision=3 --svg-xmldecl=false --svg-doctype=false --svg-dimattrs=false --dest=static/build/svgs 'svgs/**/*.svg'",
 		"prebuild": "npm run clean -s",
 		"build:styles": "npm run csscomb",
 		"build:webpack": "npm run eslint && npm run webpack-production",
-		"build:images": "run-p svg_sprite",
 		"build": "run-p build:* -s",
 		"prewatch": "npm run clean -s",
 		"watch:webpack": "npm run webpack-development",
-		"watch:svgs": "watch 'npm run svg_sprite' svgs",
 		"watch": "run-p watch:* -s"
 	},
 	"browserslist": [
-		"defaults"
+		">1%",
+		"not op_mini all"
 	]
 }

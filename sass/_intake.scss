@@ -1,6 +1,8 @@
+@use 'sass:math';
+
 .field-row {
 	display: flex;
-	margin-bottom: ($spacer / 2);
+	margin-bottom: math.div($spacer, 2);
 
 	.field {
 		flex: 1 1 0;

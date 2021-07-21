@@ -1,5 +1,7 @@
+@use 'sass:math';
+
 .accordion {
-	margin-bottom: ($spacer / 2);
+	margin-bottom: math.div($spacer, 2);
 	border: 1px solid $grey;
 	border-radius: $border-radius;
 
