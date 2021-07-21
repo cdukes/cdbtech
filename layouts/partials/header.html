@@ -9,23 +9,6 @@
 	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 	<link rel="dns-prefetch" href="https://res.cloudinary.com">
 
-	<script type="text/javascript">
-		window.ErrorPilot = {
-			errors: [],
-			start: window.performance ? null : Date.now(),
-			config: {
-				accountUUID: '450927de-4be1-4364-a1c7-1f5a40f05f0e'
-			}
-		};
-
-		window.onerror = function() {
-			window.ErrorPilot.errors.push(arguments);
-			return !!window.ErrorPilot.config.suppressErrors;
-		}
-	</script>
-
-	<script type="text/javascript" src="https://errorpilot.com/t.js" async></script>
-
 	<meta property="og:title" content="{{ .Site.Title }} - {{ .Site.Params.companyName }}">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="{{ .Permalink }}">
