@@ -3,8 +3,8 @@
 }
 
 .home-section {
-	padding-top: ($spacer * 3);
 	min-height: 100vh;
+	padding-top: ($spacer * 3);
 
 	&:first-child {
 		padding-top: ($spacer * 4.5);
@@ -22,9 +22,9 @@
 	h2 {
 		margin-bottom: 0;
 		padding-left: 1rem;
+		transform: translateX(-1.5rem);
 		border-left: .5rem solid $s;
 		font-size: rfs(2rem);
-		transform: translateX(-1.5rem);
 	}
 }
 
@@ -50,8 +50,8 @@
 	ol,
 	ul {
 		@include type;
-		overflow: hidden;
 		padding-left: 1.5em;
+		overflow: hidden;
 
 		li {
 			margin-bottom: .25em;

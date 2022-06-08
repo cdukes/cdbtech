@@ -1,8 +1,8 @@
 .nav-container {
+	z-index: 5;
 	position: sticky;
 	top: 0;
 	left: 0;
-	z-index: 5;
 	width: 100%;
 	border-top: .5em solid $p-d;
 	background-color: $p;
@@ -10,8 +10,8 @@
 
 	> .wrap {
 		@include wrap;
-		position: relative;
 		display: flex;
+		position: relative;
 		align-items: center;
 	}
 }
@@ -34,8 +34,8 @@
 
 .site-navigation {
 	display: flex;
-	align-items: center;
 	flex: 1 1 auto;
+	align-items: center;
 	padding-left: $spacer;
 	background-color: $p;
 
@@ -44,9 +44,9 @@
 		flex: 1 1 auto;
 		padding: .75em .5em;
 		color: inherit;
+		line-height: 1.1;
 		text-align: center;
 		text-decoration: none;
-		line-height: 1.1;
 
 		&.current,
 		&:hover {
@@ -57,12 +57,12 @@
 
 @include media('<=portrait') {
 	.site-navigation {
+		display: none;
 		position: absolute;
 		top: 100%;
 		left: 0;
-		display: none;
-		padding-left: 0;
 		width: 100%;
+		padding-left: 0;
 
 		.menu-open & {
 			display: block;
@@ -82,11 +82,11 @@
 	}
 
 	svg {
-		margin-right: .25em;
-		width: 1em;
-		height: 1em;
 
 		fill: $white;
+		width: 1em;
+		height: 1em;
+		margin-right: .25em;
 	}
 }
 

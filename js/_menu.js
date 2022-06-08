@@ -1,33 +1,33 @@
-(function() {
-	const button_el = document.getElementById(`toggle-nav-menu`);
+( function() {
+	const button_el = document.getElementById( `toggle-nav-menu` );
 
-	if (!button_el) {
+	if ( !button_el ) {
 		return;
 	}
 
 	function toggle() {
-		document.body.classList.toggle(`menu-open`);
+		document.body.classList.toggle( `menu-open` );
 	}
 
-	button_el.addEventListener(`click`, toggle);
-})();
+	button_el.addEventListener( `click`, toggle );
+} )();
 
-(function() {
-	const container_el = document.getElementById(`site-navigation`);
-	if (!container_el) {
+( function() {
+	const container_el = document.getElementById( `site-navigation` );
+	if ( !container_el ) {
 		return;
 	}
 
-	const link_els = container_el.getElementsByTagName(`a`);
-	if (link_els.length === 0) {
+	const link_els = container_el.getElementsByTagName( `a` );
+	if ( link_els.length === 0 ) {
 		return;
 	}
 
 	function toggle() {
-		document.body.classList.remove(`menu-open`);
+		document.body.classList.remove( `menu-open` );
 	}
 
-	for (let i = 0; i < link_els.length; i++) {
-		link_els[i].addEventListener(`click`, toggle);
+	for ( let i = 0; i < link_els.length; i++ ) {
+		link_els[i].addEventListener( `click`, toggle );
 	}
-})();
+} )();

@@ -1,10 +1,10 @@
 /* globals module, require, __dirname */
 
-const path = require(`path`),
-	{ VueLoaderPlugin } = require(`vue-loader`),
-	MiniCssExtractPlugin = require(`mini-css-extract-plugin`);
+const path = require( `path` ),
+	{ VueLoaderPlugin } = require( `vue-loader` ),
+	MiniCssExtractPlugin = require( `mini-css-extract-plugin` );
 
-module.exports = (env, argv) => {
+module.exports = ( env, argv ) => {
 	const config = {
 		entry: {
 			scripts: `./js/scripts.js`,
@@ -12,7 +12,7 @@ module.exports = (env, argv) => {
 			'style-css': `./sass/style.scss`
 		},
 		output: {
-			path: path.resolve(__dirname, `../static/build`),
+			path: path.resolve( __dirname, `../static/build` ),
 			filename: argv.mode === `production` ? `js/[name].min.js` : `js/[name].js`,
 			chunkFilename: argv.mode === `production` ? `js/[id].min.js` : `js/[id].js`
 		},
@@ -21,13 +21,13 @@ module.exports = (env, argv) => {
 		},
 		plugins: [
 			new VueLoaderPlugin(),
-			new MiniCssExtractPlugin({
+			new MiniCssExtractPlugin( {
 				filename: pathData => {
-					const slug = pathData.chunk.name.replace(`-css`, ``);
+					const slug = pathData.chunk.name.replace( `-css`, `` );
 
 					return argv.mode === `production` ? `css/${slug}.min.css` : `css/${slug}.css`;
 				}
-			})
+			} )
 		],
 		module: {
 			rules: [
@@ -54,18 +54,13 @@ module.exports = (env, argv) => {
 							loader: `postcss-loader`,
 							options: {
 								postcssOptions: {
-									plugins: [
-										[
-											`rfs`
-										],
-										[
-											`autoprefixer`,
-											{
-												cascade: true,
-												flexbox: false
-											}
-										]
-									]
+									plugins: {
+										rfs: {},
+										autoprefixer: {
+											cascade: true,
+											flexbox: false
+										}
+									}
 								}
 							}
 						},

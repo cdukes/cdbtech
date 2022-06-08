@@ -102,7 +102,7 @@
 				<a
 					:href="project.website"
 					target="_blank"
-					rel="nofollow noopener"
+					rel="nofollow"
 				>
 					<img
 						v-if="project.image"
@@ -140,11 +140,11 @@ export default {
 				categories = this.selected.length === 0 ? [`Featured`] : this.selected;
 
 			for( let i = 0; i < this.projects.length; i++ ) {
-				if( !this.intersects(this.projects[i].categories, categories) ) {
+				if( !this.intersects( this.projects[i].categories, categories ) ) {
 					continue;
 				}
 
-				projects.push(this.projects[i]);
+				projects.push( this.projects[i] );
 			}
 
 			return projects;
@@ -154,9 +154,9 @@ export default {
 		this.get_projects();
 	},
 	methods: {
-		intersects(a1, a2) {
+		intersects( a1, a2 ) {
 			for( let i = 0; i < a1.length; i++ ) {
-				if( a2.indexOf(a1[i]) === -1 ) {
+				if( a2.indexOf( a1[i] ) === -1 ) {
 					continue;
 				}
 
@@ -168,34 +168,34 @@ export default {
 		get_projects() {
 			const self = this;
 
-			fetch(`project/index.json`)
-				.then(response => response.json())
-				.then(response => {
+			fetch( `project/index.json` )
+				.then( response => response.json() )
+				.then( response => {
 					response.items = response.items.reverse();
 
 					for( let i = 0; i < response.items.length; i++ ) {
 						let slug = response.items[i].title;
 
 						slug = slug.toLowerCase();
-						slug = slug.replace(/ /g, `-`);
+						slug = slug.replace( / /g, `-` );
 						response.items[i].slug = slug;
 
-						self.projects.push(response.items[i]);
+						self.projects.push( response.items[i] );
 					}
 
 					self.loading = false;
-				});
+				} );
 		},
-		toggle(category) {
-			const idx = this.selected.indexOf(category);
+		toggle( category ) {
+			const idx = this.selected.indexOf( category );
 
 			if( idx === -1 ) {
-				this.selected.push(category);
+				this.selected.push( category );
 			} else {
-				this.selected.splice(idx, 1);
+				this.selected.splice( idx, 1 );
 			}
 		},
-		get_src(project, width, height) {
+		get_src( project, width, height ) {
 			return `https://res.cloudinary.com/cdbtech/image/fetch/w_${width},h_${height},dpr_2.0,c_lfill,g_north/https://cdbtech.com/sites/${project.image}`;
 		}
 	}

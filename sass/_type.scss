@@ -1,17 +1,15 @@
-html,
-body {
-	// min-width: $site-width; // Prevents backgrounds on these elements from being truncated on smaller screens on fixed-width sites
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 3.25em
 }
 
 body {
+	fill: $text;
 	background-color: $grey-light;
 	color: $text;
 	font-weight: 300;
 	font-family: $sans;
-	// scroll-behavior: smooth;
-	// overscroll-behavior: contain;
-
-	fill: $text;
+	scroll-behavior: smooth;
 }
 
 ::selection {

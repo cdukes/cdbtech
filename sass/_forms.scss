@@ -5,15 +5,15 @@ input[type='email'],
 input[type='url'],
 input[type='number'],
 textarea {
-	padding: calc(.5em - 1px) .75em;
-	max-width: 100%;
+
+	appearance: none;
 	width: 100%;
+	max-width: 100%;
+	padding: calc(.5em - 1px) .75em;
 	border: 1px solid $grey;
 	border-radius: $border-radius;
 	background-color: $white;
 	color: $black;
-
-	appearance: none;
 }
 
 // Hide the spinner on input[type="number"] in Firefox
@@ -52,15 +52,17 @@ select {
 		right: .75em;
 		width: 0;
 		height: 0;
+		transform: translateY(-2.5px);
 		border-width: 5px;
 		border-style: solid;
 		border-color: $black transparent transparent transparent;
 		content: '';
-		transform: translateY(-2.5px);
 		pointer-events: none;
 	}
 
 	select {
+
+		appearance: none;
 		padding: calc(.5em - 1px) 2em calc(.5em - 1px) .75em;
 		border: 1px solid $grey;
 		border-radius: $border-radius;
@@ -68,8 +70,6 @@ select {
 		font-weight: 300;
 		font-family: inherit;
 		cursor: pointer;
-
-		appearance: none;
 
 		&::-ms-expand {
 			display: none;

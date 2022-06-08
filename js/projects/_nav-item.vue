@@ -37,7 +37,7 @@ export default {
 	methods: {
 		toggle() {
 			this.selected = !this.selected;
-			this.$emit(`toggle`, this.name);
+			this.$emit( `toggle`, this.name );
 		}
 	}
 };

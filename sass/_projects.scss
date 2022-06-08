@@ -11,8 +11,8 @@
 }
 
 .spinner {
-	margin: ($spacer * 2) auto;
 	width: 4em;
+	margin: ($spacer * 2) auto;
 	text-align: center;
 
 	> div {
@@ -34,19 +34,19 @@
 }
 
 .projects-nav {
+	max-width: 42em;
 	margin-right: auto;
 	margin-bottom: $spacer;
 	margin-left: auto;
 	padding-bottom: $spacer;
-	max-width: 42em;
 	border-bottom: 1px solid $grey;
 	text-align: center;
 }
 
 .projects-nav-type {
 	display: flex;
-	align-items: center;
 	flex-wrap: wrap;
+	align-items: center;
 	margin-bottom: .25em;
 
 	&:last-child {
@@ -55,11 +55,11 @@
 
 	span {
 		display: block;
-		margin-right: math.div($spacer, 2);
 		width: 10em;
-		text-align: right;
+		margin-right: math.div($spacer, 2);
 		font-weight: bold;
 		font-size: rfs(.9rem);
+		text-align: right;
 
 		&:after {
 			content: ':';
@@ -89,19 +89,19 @@
 		justify-content: center;
 
 		span {
+			width: 100%;
 			margin-right: 0;
 			margin-bottom: .25em;
-			width: 100%;
 			text-align: left;
 		}
 	}
 }
 
 .projects-list {
+	grid-gap: .5em;
 	display: grid;
 
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: .5em;
 }
 
 @include media('<portrait') {

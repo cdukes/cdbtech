@@ -2,8 +2,8 @@
 
 import App from './projects/app.vue';
 
-(function() {
-	const app_el = document.getElementById(`projects-app`);
+( function() {
+	const app_el = document.getElementById( `projects-app` );
 
 	if( !app_el ) {
 		return;
@@ -13,10 +13,10 @@ import App from './projects/app.vue';
 		return;
 	}
 
-	new Vue({
+	new Vue( {
 		el: app_el,
-		render(helper) {
-			return helper(App);
+		render( helper ) {
+			return helper( App );
 		}
-	});
-})();
+	} );
+} )();

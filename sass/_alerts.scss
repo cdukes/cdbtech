@@ -1,36 +1,36 @@
 .alert {
-	position: relative;
 	display: block;
-	clear: both;
+	position: relative;
 	margin: 0 0 $spacer;
 	padding: 1em 1em 1em 4em;
-	border-top-width: .25em;
-	border-top-style: solid;
+	clear: both;
 	border-right: 1px solid $grey;
 	border-bottom: 1px solid $grey;
 	border-left: 1px solid $grey;
+	border-top-width: .25em;
+	border-top-style: solid;
 	background-color: $white;
-	text-align: left;
 	font-size: rfs(.9rem);
+	text-align: left;
 
 	&:last-child {
 		margin-bottom: 0;
 	}
 
 	&::before {
+		display: block;
 		position: absolute;
 		top: 0;
 		left: 1em;
-		display: block;
-		padding-top: 1em;
 		width: 1.5em;
 		height: 2.5em;
-		color: $white;
+		padding-top: 1em;
 		content: '';
-		text-align: center;
+		color: $white;
 		font-size: rfs(1rem);
-		font-family: sans-serif;
 		line-height: 1.5;
+		font-family: sans-serif;
+		text-align: center;
 	}
 }
 
@@ -40,8 +40,8 @@
 
 	&::before {
 		background-color: $s-d;
-		color: $white;
 		content: 'i';
+		color: $white;
 		font-style: italic;
 		font-family: Times, Georgia, serif;
 	}
