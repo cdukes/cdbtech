@@ -14,7 +14,7 @@ module.exports = ( env, argv ) => {
 		output: {
 			path: path.resolve( __dirname, `../static/build` ),
 			filename: argv.mode === `production` ? `js/[name].min.js` : `js/[name].js`,
-			chunkFilename: argv.mode === `production` ? `js/[id].min.js` : `js/[id].js`
+			chunkFilename: argv.mode === `production` ? `js/[id].[contenthash].min.js` : `js/[id].js`
 		},
 		optimization: {
 			minimize: argv.mode === `production`
