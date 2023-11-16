@@ -11,7 +11,11 @@
 				</header>
 
 				<div class="home-section-content">
-					{{ .Render }}
+					{{ if .Layout }}
+					{{ .Render .Layout }}
+					{{ else }}
+					{{ .Render "single" }}
+					{{ end }}
 				</div>
 			</div>
 		</section>
