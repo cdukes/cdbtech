@@ -1,11 +1,25 @@
+@use 'sass:math';
+
+@use 'variables' as *;
+@use 'toolkit' as *;
+@use 'include-media' as *;
+
+// Universal Box-Sizing (http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
 html {
+	box-sizing: border-box;
 	scroll-behavior: smooth;
 	scroll-padding-top: 3.25em
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 body {
-	fill: $text;
 	background-color: $grey-light;
+	fill: $text;
 	color: $text;
 	font-weight: 300;
 	font-family: $sans;

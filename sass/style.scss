@@ -1,42 +1,24 @@
 // Normalize
-@import '~normalize.css/normalize';
-
-// Variables & Mixins - variables must be imported after include-media, so that breakpoints aren't overwritten
-@import '~include-media/dist/_include-media';
-@import 'variables';
-@import '~include-media-export/dist/_include-media-export';
+@use '~normalize.css/normalize';
 
 // Clearfix & Toolkit
-@import 'clearfix';
-@import 'toolkit';
-@import 'accessibility';
-
-// Universal Box-Sizing (http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
-html {
-	box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
+@use 'accessibility';
 
 // Sitewide Styles
-@import 'type';
-@import 'headings';
-@import 'objects-and-images';
-@import 'alerts';
-@import 'buttons';
-@import 'forms';
+@use 'type';
+@use 'headings';
+@use 'objects-and-images';
+@use 'alerts';
+@use 'buttons';
+@use 'forms';
 
 // Module Styles
-@import 'navigation';
-@import 'footer';
+@use 'navigation';
+@use 'footer';
 
 // Templates
-@import 'home';
-@import 'intake';
-@import 'projects';
-@import 'testimonials';
-@import 'faq';
+@use 'home';
+@use 'intake';
+@use 'projects';
+@use 'testimonials';
+@use 'faq';

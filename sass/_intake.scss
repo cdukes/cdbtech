@@ -1,5 +1,9 @@
 @use 'sass:math';
 
+@use 'variables' as *;
+@use 'toolkit' as *;
+@use 'include-media' as *;
+
 .field-row {
 	display: flex;
 	margin-bottom: math.div($spacer, 2);

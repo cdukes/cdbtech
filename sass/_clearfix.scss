@@ -1,9 +1,15 @@
+@use 'sass:math';
+
+@use 'variables' as *;
+@use 'toolkit' as *;
+@use 'include-media' as *;
+
 // Float Clearing - from Genesis 2.2.2's style.css
 
 // http://nicolasgallagher.com/micro-clearfix-hack/
 // https://stackoverflow.com/questions/34857848/is-there-a-way-to-use-the-clearfix-hack-alongside-flexbox
 @mixin clearfix {
-	zoom: 1;			// For IE
+	zoom: 1; // For IE
 
 	&::before,
 	&::after {

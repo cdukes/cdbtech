@@ -1,11 +1,18 @@
 @use 'sass:math';
 
+@use 'variables' as *;
+@use 'toolkit' as *;
+@use 'include-media' as *;
+
 @keyframes sk-bouncedelay {
+
 	0%,
 	80%,
 	100% {
 		transform: scale(0);
-	} 40% {
+	}
+
+	40% {
 		transform: scale(1.0);
 	}
 }

@@ -1,3 +1,9 @@
+@use 'sass:math';
+
+@use 'variables' as *;
+@use 'toolkit' as *;
+@use 'include-media' as *;
+
 .nav-container {
 	z-index: 5;
 	position: sticky;
@@ -82,11 +88,10 @@
 	}
 
 	svg {
-
-		fill: $white;
 		width: 1em;
 		height: 1em;
 		margin-right: .25em;
+		fill: $white;
 	}
 }
 
